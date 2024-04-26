@@ -1,1 +1,65 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>섹션 관련 요소</title>
+</head>
+
+<body class="vsc-initialized">
+  <!-- 음성안내시설인 WAIAA를 통한 접근이 쉬워지게 역할을 구분하는게 좋음 -->
+  <!-- RSS Feed로 제공될만한 완성된 블록을 작성하는게 주 목적 -->
+  <header>헤더</header>
+
+  <!-- 주요 내비게이션: nav. 많아도 2개만 사용 추천 -->
+  <nav>내비게이션</nav>
+
+  <!-- 주요 섹션임을 알리는 main 섹션 -->
+  <main>
+  
+    <section>
+      <header>
+        <h2>섹션 제목</h2>
+      </header>
+      섹션 콘텐츠....
+      <footer>
+        작성자: 이듬...
+      </footer>
+    </section>
+    <!-- 비슷한 세션이지만 다르게 사용 가능 -->
+    <article>
+      ...
+    </article>
+  </main>
+  <!-- 메인과 별개로 놓을 정보 aside -->
+  <!-- 만약 main과 묶고싶다면 div로 묶으면 됨. role을 줘서 구분하는 방법도 있음 -->
+  <aside>부가 정보</aside>
+  <footer>바닥글</footer>
+  <hr />
+  <div role="banner">헤더</div>
+  <div role="navigation">내비게이션</div>
+  <div role="main">
+    <div role="article">섹션 콘텐츠</div>
+    <div role="group">섹션 콘텐츠</div>
+  </div>
+  <div role="complementary">부가 정보</div>
+  <div role="contentinfo">바닥글</div>
+
+  <div role="list">
+    <div role="listitem">목록</div>
+    <div role="listitem">목록</div>
+    <div role="listitem">목록</div>
+    <div role="listitem">목록</div>
+    <div role="listitem">목록</div>
+    <div role="listitem">목록</div>
+  </div>
+
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</body>
+
+</html>
