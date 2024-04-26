@@ -1,1 +1,54 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>순차, 비순차 목록</title>
+</head>
+
+<body>
+  <h1>목록 (List)</h1>
+  <h2>비순서형 목록</h2>
+
+  <!-- <ul>요소는 정렬되지않는 항목 목록의 상위요소이다. -->
+    <!-- <ul>의 유일한 하위 요소는 <li>목록 항목 요소들 뿐이다. **** -->
+
+  <ul>
+    <!-- li*4{목록} -->
+    <li>목록</li>
+    <li>목록</li>
+    <li>목록</li>
+    <li>목록</li>
+
+    <!-- li*4{목록$} -->
+    <li>목록1</li>
+    <li>목록2</li>
+    <li>목록3</li>
+    <li>목록4</li>
+  </ul>
+
+  <h2>순서형 목록</h2>
+  <ul>
+    <ol>
+      <li>목록1</li>
+      <li>목록2</li>
+      <li>목록3</li>
+      <li>목록4</li>
+    </ol>
+  </ul>
+
+  <!-- 가장 많이 저지르는 실수: 중첩목록 -->
+  <!-- ul 안에는 li만 존재해야하는게 문법상 맞으므로, 아래 코드는 문법상 틀린 코드이다. -->
+  <ul>
+    <li>outside ul, li</li>
+    <ul>
+      <li>inside ul, li</li>
+    </ul>
+  </ul>
+
+  <!-- 외형상으론 차이가 없다. -->
+
+</body>
+
+</html>
