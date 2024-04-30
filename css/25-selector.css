@@ -1,1 +1,23 @@
 /* CSS 선택자(Selector) */
+
+* {
+  color: red;
+}
+
+p {
+  color: blue;
+}
+
+.note {
+  color: green;
+}
+
+/*id 방식엔 # 붙이기*/
+#euid {
+  color: purple;
+}
+
+/*[] : 속성 선택자*/
+a[href] {
+  color: orange;
+}
