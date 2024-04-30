@@ -1,1 +1,22 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>video 요소</title>
+</head>
+<body>
+  <figure>
+    <!-- poster: 재생 전 썸네일/controls: vid 바로 보임/autoplay: 창 열때 바로 재생/muted:음소거로 재생 -->
+    <video class="fullsize" poster="video/poster.jpg" controls autoplay="true" muted>
+      <source src="video/google-developer-stories.mp4" type="video/mp4" />
+      <source src="video/google-developer-stories.mov" type="video/mov" />
+      <source src="video/google-developer-stories.ogg" type="video/ogg" />
+      <source src="video/google-developer-stories.webm" type="video/webm" />
+      <!-- track: 자막 파일 -->
+      <track src="video/google-developer-stories-subtitles-en.vtt" 
+             kind="captions" srclang="en" label="English Caption" />
+    </video>   
+  </figure>
+</body>
+</html>
