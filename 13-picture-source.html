@@ -1,1 +1,33 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>picture, source 요소</title>
+</head>
+<body>
+  <!-- picture는 다음과 같은 구조를 가져야 한다. -->
+  <!-- source는 생략 가능하나, img는 반드시 포함되어야 한다. -->
+  <picture>
+    <!-- srcset :  -->
+    <!-- <source srcset="./images/netflix@1x.png 1x, ./images/netflix@2x.png 2x" /> -->
+    <source srcset="./images/netflix@1x.webp 1x, ./images/netflix@2x.webp 2x" />
+    <img src="./images/netflix.png" alt="넷플릭스" />
+  </picture>
+  <hr />
+  <picture>
+    <!-- 1x, 2x 배율 및 픽셀밀도-->
+    <source srcset="./images/image-1x.png 1x, ./images/image-2x.png 2x, ./images/image-3x.png 3x, ./images/images-4x.png 4x" />
+    <img src="./images/image-src.png" alt="src배율" />
+  </picture>
+  <hr />
+  <picture>
+    <!-- w: width  -->
+    <source srcset="./images/small-550.jpg 550w, ./images/medium-1024.jpg 1024w, ./images/large-1600.jpg 1600w"
+    sizes="(max-width: 800px) 50vw, 600px"/>
+    <img src="./images/image-src.png" alt="src배율" />
+  </picture>
+  <!-- 사이징 속성 -->
+
+</body>
+</html>
